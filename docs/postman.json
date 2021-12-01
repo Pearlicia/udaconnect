@@ -1,0 +1,157 @@
+{
+	"info": {
+		"_postman_id": "f7add6de-f1bb-4854-979a-8ad247644ta3",
+		"name": "udaconnect",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "persons",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:30009/api/persons",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "30009",
+					"path": [
+						"api",
+						"persons"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "locations",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:30013/api/locations",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "30013",
+					"path": [
+						"api",
+						"locations"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "persons",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"company_name\": \"Jessica Upholstery\",\n        \"last_name\": \"Jessica\",\n        \"first_name\": \"John\"\n        \n}"
+				},
+				"url": {
+					"raw": "http://localhost:30009/api/persons",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "30009",
+					"path": [
+						"api",
+						"persons"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "persons_id",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:30009/api/persons/2",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "30009",
+					"path": [
+						"api",
+						"persons",
+						"2"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "connection",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:30011/api/persons/5/connection?start_date=2020-01-01&end_date=2020-12-30&distance=5",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "30011",
+					"path": [
+						"api",
+						"persons",
+						"5",
+						"connection"
+					],
+					"query": [
+						{
+							"key": "start_date",
+							"value": "2020-02-02"
+						},
+						{
+							"key": "end_date",
+							"value": "2020-10-20"
+						},
+						{
+							"key": "distance",
+							"value": "5"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "locations_id",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:30013/api/locations/7",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "30013",
+					"path": [
+						"api",
+						"locations",
+						"7"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}

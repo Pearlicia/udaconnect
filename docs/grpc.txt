@@ -1,0 +1,4 @@
+The grpc-location service writer file creates both person and location data
+The getter file retrieves location and person data
+The main file save location and person data to postgres
+
