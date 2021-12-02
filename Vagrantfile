@@ -20,8 +20,8 @@ Vagrant.configure("2") do |config|
     master.vm.network 'private_network', ip: "192.168.0.200",  virtualbox__intnet: true
     master.vm.network "forwarded_port", guest: 22, host: 2222, id: "ssh", disabled: true
     master.vm.network "forwarded_port", guest: 22, host: 2000 # Master Node SSH
-    master.vm.network "forwarded_port", guest: 6443, host: 6446 # API Access
-    for p in 30009..30100 # expose NodePort IP's
+    master.vm.network "forwarded_port", guest: 6443, host: 6466 # API Access
+    for p in 30060..30100 # expose NodePort IP's
       master.vm.network "forwarded_port", guest: p, host: p, protocol: "tcp"
       end
     master.vm.provider "virtualbox" do |v|
