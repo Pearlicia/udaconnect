@@ -1,5 +1,5 @@
 There are five different microservices (1) Connection-service, which uses REST.
-(2) Person-service which saves the persons data to both kafka and postgres
+(2) Person-service which saves the persons data to postgres
 (3) location-service which saves the location data to both kafka and postgres
 (4) grpc-location Uses grpc to save location data to postgres
 (5) kafka-service saves to create a topics and get topics through consumer
