@@ -6,7 +6,7 @@ import logging
 from models import session, Location, Person, func
 from geoalchemy2.functions import ST_AsText, ST_Point
 
-KAFKA_TOPIC = "person"
+KAFKA_TOPIC = "location"
 KAFKA_SERVER = "kafka:9092"
 
 logging.basicConfig(
